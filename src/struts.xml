@@ -1,0 +1,17 @@
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.1//EN"
+	"http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<!-- 声明包 -->
+    <package name="myPackage" extends="struts-default">
+    	<!-- 定义action -->
+    	<action name="userAction" class="com.lyq.action.UserAction">
+    		<!-- 添加成功的映射页面 -->
+    		<result name="add">ok.jsp</result>
+    		<!-- 更新成功的映射页面 -->
+    		<result name="update">ok.jsp</result>
+    		<result name="delete">ok.jsp</result>
+    	</action>
+    </package>
+</struts>
+
